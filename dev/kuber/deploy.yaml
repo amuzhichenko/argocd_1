@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kuber-2
+  name: kuber-1
   labels:
     app: kuber
 spec:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: kuber-app
-        image: bakavets/kuber:v1.0
+        image: amuzhichenko/simple_web:latest
         ports:
         - containerPort: 8000
